@@ -1,0 +1,10 @@
+name = "kingshot-coupon-bot"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+kv_namespaces = [
+  { binding = "CODES_KV", id = "REPLACE_WITH_KV_ID" }
+]
+
+[triggers]
+crons = ["0 */3 * * *"]  # every 3 hours
